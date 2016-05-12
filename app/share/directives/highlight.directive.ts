@@ -3,6 +3,9 @@ import { Directive, ElementRef, Input, HostListener }from '@angular/core';
 /**
  * HighlightDirective
  * [attribute]: attribute directive, for avoiding collision, we pick up a prefix.
+ * 'attribute', not only is the symbol of attribute directive, but alse can be used as an attribute to be binded.
+ * we can only use 'attribute' in the element, when the attribute is binded, we can alse use '[attribute]';
+ * I prefer the latter, for that angular can give us some tips if some spell error happen.
  */
 @Directive({
     selector: '[myHighlight]',
