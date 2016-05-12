@@ -10,9 +10,12 @@ import { Directive, ElementRef, Input, HostListener }from '@angular/core';
  *   1. ElementRef
  *   2. @HostListener()
  *   3. @Input()
+ *   4. exportAs: Defines the name that can be used in the template to assign this directive to a variable.
+ *   5. Understanding how injection works !important
  */
 @Directive({
     selector: '[myHighlight]',
+    exportAs:'highlight'
 })
 export class HighlightDirective {
 

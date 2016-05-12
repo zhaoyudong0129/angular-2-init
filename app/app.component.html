@@ -1,7 +1,11 @@
-<h1>{{ title }}</h1>
-<div>
-    <input type="radio" name="color" (click)="color='lightgreen'">Green
-    <input type="radio" name="color" (click)="color='yellow'">Yellow
-    <input type="radio" name="color" (click)="color='cyan'">Cyan
+<div class="container">
+    <h1>{{ title }}</h1>
+    <div>
+        <input type="radio" name="color" (click)="color='lightgreen'">Green
+        <input type="radio" name="color" (click)="color='yellow'">Yellow
+        <input type="radio" name="color" (click)="color='cyan'">Cyan
+    </div>
+    <p [myHighlight]="color" [defaultColor]="'violet'"> Highlight Me!!</p>
+
+    <hero-form></hero-form>
 </div>
-<p [myHighlight]="color" [defaultColor]="'violet'"> Highlight Me!!</p>
