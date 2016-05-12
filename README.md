@@ -1,5 +1,5 @@
 ## Scaffolding for Angular 2 Project
-### Configuration
+### Dev Configuration
 - .gitignore
 - .vscode/setting.json
 - package.json
