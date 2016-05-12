@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+import {HighlightDirective} from './share/directives/highlight.directive';
+
 @Component({
     selector: 'my-app',
-    template: '<h1>{{title}}</h1>'
+    templateUrl: 'app/app.component.html',
+    directives: [HighlightDirective]
 })
 export class AppComponent implements OnInit {
     title = 'Hello Angular!!';
