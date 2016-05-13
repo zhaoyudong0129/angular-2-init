@@ -7,3 +7,7 @@ export class Hero{
         public alterEgo?:string
         ){}
 }
+
+class ScienceHero extends Hero{
+    
+}
